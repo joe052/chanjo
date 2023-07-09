@@ -12,4 +12,7 @@
 <!--    Third Screen Resources-->
     <string name="title3">Welcome to mChanjo</string>
     <string name="started">Let\'s Get Started</string>
+
+<!--    Skip resource-->
+    <string name="skip">Skip</string>
 </resources>

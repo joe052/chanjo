@@ -18,30 +18,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:fontFamily="@font/josefin_sans"
-        android:text="@string/title3"
-        android:textSize="30sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:textColor="@color/blackie"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/imageView" />
 
     <TextView
-        android:id="@+id/next"
+        android:id="@+id/finish"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="236dp"
-        android:textColor="@color/blackie"
+        android:layout_marginBottom="316dp"
         android:fontFamily="@font/josefin_sans"
         android:text="@string/started"
+        android:textColor="@color/blackie"
         android:textSize="22sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent" />
 
 
