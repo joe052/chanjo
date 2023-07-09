@@ -1,5 +1,6 @@
 .idea
 .vscode
+/mChanjo/.idea/*
 /mChanjo/*.iml
 /mChanjo/.gradle
 /mChanjo/local.properties
