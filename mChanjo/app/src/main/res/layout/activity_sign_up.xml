@@ -80,7 +80,7 @@
                 android:textStyle="bold"
                 android:textSize="18sp"
                 app:cornerRadius="30dp"
-                android:background="@drawable/border"
+                android:background="@drawable/button"
                 />
         </LinearLayout>
     </LinearLayout>
