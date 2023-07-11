@@ -23,6 +23,8 @@
     <string name="dose4">Date of Fourth Dosage :</string>
     <string name="appointment"> Book appointment :</string>
 
+
+
     <!--    Skip resource-->
     <string name="skip">Skip</string>
 </resources>
