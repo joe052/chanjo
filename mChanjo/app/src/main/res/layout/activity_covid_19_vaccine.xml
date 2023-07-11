@@ -11,6 +11,7 @@
         android:id="@+id/type_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="10dp"
         android:text="@string/type"
         android:textSize="20sp"
         app:fontFamily="@font/josefin_sans"
@@ -39,6 +40,22 @@
             android:layout_height="wrap_content"
             android:inputType="none" />
     </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/type_text2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/dose1"
+        android:textSize="20sp"
+        app:fontFamily="@font/josefin_sans"
+        app:layout_constraintTop_toBottomOf="@id/selection_type"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </androidx.appcompat.widget.AppCompatTextView>
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
