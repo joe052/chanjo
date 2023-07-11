@@ -21,6 +21,8 @@
         <activity
             android:name=".splashscreen.SplashScreen"
             android:exported="false" />
+        <activity android:name=".ChooseClient"
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="false">
