@@ -16,6 +16,13 @@
     <string name="select">Select Item</string>
     <string name="type">Vaccine Type : </string>
 
+    <!-- dosages -->
+    <string name="dose1">Date of First Dosage :</string>
+    <string name="dose2">Date of Second Dosage :</string>
+    <string name="dose3">Date of Third Dosage :</string>
+    <string name="dose4">Date of Fourth Dosage :</string>
+    <string name="appointment"> Book appointment :</string>
+
     <!--    Skip resource-->
     <string name="skip">Skip</string>
 </resources>
