@@ -55,23 +55,27 @@
 
     </androidx.appcompat.widget.AppCompatTextView>
 
-    <
-
-    <DatePicker
-        android:id="@+id/date_picker1"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/selection_type1"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:datePickerMode="calendar"
-        app:layout_constraintTop_toBottomOf="@id/type_text2"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="@string/select"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/type_text2">
+
 
         <AutoCompleteTextView
             android:id="@+id/auto_complete_txt1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="none" />
-    </DatePicker>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/type_text3"
@@ -81,7 +85,7 @@
         android:text="@string/dose1"
         android:textSize="20sp"
         app:fontFamily="@font/josefin_sans"
-        app:layout_constraintTop_toBottomOf="@id/date_picker1"
+        app:layout_constraintTop_toBottomOf="@id/selection_type1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
