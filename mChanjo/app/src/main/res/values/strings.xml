@@ -13,6 +13,8 @@
     <string name="title3">Welcome to mChanjo</string>
     <string name="started">Let\'s Get Started</string>
 
+    <string name="select">Select Item</string>
+
     <!--    Skip resource-->
     <string name="skip">Skip</string>
 </resources>
