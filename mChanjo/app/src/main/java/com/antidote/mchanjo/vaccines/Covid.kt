@@ -46,6 +46,74 @@ class Covid : AppCompatActivity() {
         //date picker text view
         autoCompleteTextView = findViewById(R.id.auto_complete_txt1)
 
+        val datePickerListener1 = DatePickerDialog.OnDateSetListener { _, year, monthOfYear, dayOfMonth ->
+            calendar.set(Calendar.YEAR, year)
+            calendar.set(Calendar.MONTH, monthOfYear)
+            calendar.set(Calendar.DAY_OF_MONTH, dayOfMonth)
+            updateDateField()
+        }
+
+        autoCompleteTextView.setOnFocusChangeListener { _, hasFocus ->
+            if (hasFocus) {
+                val datePickerDialog = DatePickerDialog(
+                    this,
+                    datePickerListener1,
+                    calendar.get(Calendar.YEAR),
+                    calendar.get(Calendar.MONTH),
+                    calendar.get(Calendar.DAY_OF_MONTH)
+                )
+                datePickerDialog.show()
+            }
+        }
+
+        // Set up the AutoCompleteTextView with date suggestions
+        val dateFormat1 = SimpleDateFormat("dd-MM-yyyy", Locale.getDefault())
+        val dateSuggestions1 = arrayOf(
+            dateFormat1.format(Date()),  // Today's date
+            dateFormat1.format(calendar.apply { add(Calendar.DAY_OF_MONTH, 1) }.time),  // Tomorrow's date
+            dateFormat1.format(calendar.apply { add(Calendar.DAY_OF_MONTH, 1) }.time)   // Next day's date
+        )
+
+        val adapter2 = ArrayAdapter(this, android.R.layout.simple_dropdown_item_1line, dateSuggestions1)
+        autoCompleteTextView.setAdapter(adapter2)
+
+        autoCompleteTextView = findViewById(R.id.auto_complete_txt2)
+
+        val datePickerListener2 = DatePickerDialog.OnDateSetListener { _, year, monthOfYear, dayOfMonth ->
+            calendar.set(Calendar.YEAR, year)
+            calendar.set(Calendar.MONTH, monthOfYear)
+            calendar.set(Calendar.DAY_OF_MONTH, dayOfMonth)
+            updateDateField()
+        }
+
+        autoCompleteTextView.setOnFocusChangeListener { _, hasFocus ->
+            if (hasFocus) {
+                val datePickerDialog = DatePickerDialog(
+                    this,
+                    datePickerListener2,
+                    calendar.get(Calendar.YEAR),
+                    calendar.get(Calendar.MONTH),
+                    calendar.get(Calendar.DAY_OF_MONTH)
+                )
+                datePickerDialog.show()
+            }
+        }
+
+        // Set up the AutoCompleteTextView with date suggestions
+        val dateFormat2 = SimpleDateFormat("dd-MM-yyyy", Locale.getDefault())
+        val dateSuggestions2 = arrayOf(
+            dateFormat2.format(Date()),  // Today's date
+            dateFormat2.format(calendar.apply { add(Calendar.DAY_OF_MONTH, 1) }.time),  // Tomorrow's date
+            dateFormat2.format(calendar.apply { add(Calendar.DAY_OF_MONTH, 1) }.time)   // Next day's date
+        )
+
+        val adapter3 = ArrayAdapter(this, android.R.layout.simple_dropdown_item_1line, dateSuggestions2)
+        autoCompleteTextView.setAdapter(adapter3)
+
+
+
+        autoCompleteTextView = findViewById(R.id.auto_complete_txt3)
+
         val datePickerListener = DatePickerDialog.OnDateSetListener { _, year, monthOfYear, dayOfMonth ->
             calendar.set(Calendar.YEAR, year)
             calendar.set(Calendar.MONTH, monthOfYear)
@@ -76,38 +144,6 @@ class Covid : AppCompatActivity() {
 
         val adapter1 = ArrayAdapter(this, android.R.layout.simple_dropdown_item_1line, dateSuggestions)
         autoCompleteTextView.setAdapter(adapter1)
-
-        autoCompleteTextView = findViewById(R.id.auto_complete_txt2)
-
-        autoCompleteTextView.setOnFocusChangeListener { _, hasFocus ->
-            if (hasFocus) {
-                val datePickerDialog = DatePickerDialog(
-                    this,
-                    datePickerListener,
-                    calendar.get(Calendar.YEAR),
-                    calendar.get(Calendar.MONTH),
-                    calendar.get(Calendar.DAY_OF_MONTH)
-                )
-                datePickerDialog.show()
-            }
-        }
-
-
-
-        autoCompleteTextView = findViewById(R.id.auto_complete_txt3)
-
-            autoCompleteTextView.setOnFocusChangeListener { _, hasFocus ->
-                if (hasFocus) {
-                    val datePickerDialog = DatePickerDialog(
-                        this,
-                        datePickerListener,
-                        calendar.get(Calendar.YEAR),
-                        calendar.get(Calendar.MONTH),
-                        calendar.get(Calendar.DAY_OF_MONTH)
-                    )
-                    datePickerDialog.show()
-                }
-            }
 
 
     }private fun updateDateField() {
