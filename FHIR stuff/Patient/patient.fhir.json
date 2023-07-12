@@ -1,0 +1,31 @@
+{
+  "resourceType": "Patient",
+  "name": [
+    {
+      "use": "official",
+      "given": ["John"],
+      "family": "Doe"
+    }
+  ],
+  "gender": "Male",
+  "birthDate": "1997-09-08",
+  "telecom": [
+    {
+      "value": "9876543210",
+      "use": "mobile",
+      "system": "phone"
+    },
+    {
+      "system": "email",
+      "value": "john@gmail.com"
+    }
+  ],
+  "address": [
+    {
+      "line": ["213, Diamond Residency"],
+      "city": "Manipal",
+      "state": "Karnataka",
+      "postalCode": "567104"
+    }
+  ]
+}
