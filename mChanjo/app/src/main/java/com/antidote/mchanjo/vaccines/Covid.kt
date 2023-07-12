@@ -76,10 +76,15 @@ class Covid : AppCompatActivity() {
 
         val adapter1 = ArrayAdapter(this, android.R.layout.simple_dropdown_item_1line, dateSuggestions)
         autoCompleteTextView.setAdapter(adapter1)
+
+        autoCompleteTextView = findViewById(R.id.auto_complete_txt2)
+        autoCompleteTextView = findViewById(R.id.auto_complete_txt3)
     }private fun updateDateField() {
         val dateFormat = SimpleDateFormat("dd-MM-yyyy", Locale.getDefault())
         autoCompleteTextView.setText(dateFormat.format(calendar.time))
     }
+
+
 
 
 }
