@@ -18,7 +18,7 @@ class SplashFragment : Fragment() {
         Handler().postDelayed({
 //            Check if the user has finished the onboarding process
             if (onBoardingFinished()){
-                findNavController().navigate(R.id.action_splashFragment_to_login)
+                findNavController().navigate(R.id.action_splashFragment_to_loginActivity)
 
             }else{
                 findNavController().navigate(R.id.action_splashFragment_to_viewPagerFragment)

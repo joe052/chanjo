@@ -19,7 +19,7 @@
             android:name=".authentication.SignUpActivity"
             android:exported="false" />
         <activity
-            android:name=".splashscreen.SplashScreen"
+            android:name=".SplashFragment"
             android:exported="false" />
         <activity android:name=".ChooseClient"
             android:exported="false" />
