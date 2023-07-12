@@ -22,6 +22,9 @@
     <string name="dose3">Date of Third Dosage :</string>
     <string name="dose4">Date of Fourth Dosage :</string>
     <string name="appointment"> Book appointment :</string>
+    <string name="calendar">dd/mm/yyyy</string>
+    <string name="covid1">Covid-19 Vaccination report </string>
+    <string name="covid2">please fill the report below </string>
 
 
 
