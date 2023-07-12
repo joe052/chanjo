@@ -16,6 +16,9 @@
     <string name="select">Select Item</string>
     <string name="type">Vaccine Type : </string>
 
+    <string name="covidguide1">covid-19 Guideline</string>
+    <string name="covidguidedescription1">wear mask and wash your hand reguraly and keep distance </string>
+
     <!-- dosages -->
     <string name="dose1">Date of First Dosage :</string>
     <string name="dose2">Date of Second Dosage :</string>
