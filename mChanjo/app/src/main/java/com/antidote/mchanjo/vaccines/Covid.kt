@@ -78,7 +78,38 @@ class Covid : AppCompatActivity() {
         autoCompleteTextView.setAdapter(adapter1)
 
         autoCompleteTextView = findViewById(R.id.auto_complete_txt2)
+
+        autoCompleteTextView.setOnFocusChangeListener { _, hasFocus ->
+            if (hasFocus) {
+                val datePickerDialog = DatePickerDialog(
+                    this,
+                    datePickerListener,
+                    calendar.get(Calendar.YEAR),
+                    calendar.get(Calendar.MONTH),
+                    calendar.get(Calendar.DAY_OF_MONTH)
+                )
+                datePickerDialog.show()
+            }
+        }
+
+
+
         autoCompleteTextView = findViewById(R.id.auto_complete_txt3)
+
+            autoCompleteTextView.setOnFocusChangeListener { _, hasFocus ->
+                if (hasFocus) {
+                    val datePickerDialog = DatePickerDialog(
+                        this,
+                        datePickerListener,
+                        calendar.get(Calendar.YEAR),
+                        calendar.get(Calendar.MONTH),
+                        calendar.get(Calendar.DAY_OF_MONTH)
+                    )
+                    datePickerDialog.show()
+                }
+            }
+
+
     }private fun updateDateField() {
         val dateFormat = SimpleDateFormat("dd-MM-yyyy", Locale.getDefault())
         autoCompleteTextView.setText(dateFormat.format(calendar.time))
