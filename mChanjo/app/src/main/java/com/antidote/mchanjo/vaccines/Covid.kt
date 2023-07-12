@@ -33,7 +33,7 @@ class Covid : AppCompatActivity() {
 
         autoCompleteTextView.setOnItemClickListener { parent, view, position, id ->
             val selectedOption = parent.getItemAtPosition(position) as String
-            Toast.makeText(applicationContext, "selcted: $selectedOption", Toast.LENGTH_SHORT).show()
+            Toast.makeText(applicationContext, "selected: $selectedOption", Toast.LENGTH_SHORT).show()
         }
 
     }
