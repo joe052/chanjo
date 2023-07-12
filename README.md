@@ -9,4 +9,9 @@ https://console.firebase.google.com/project/chanjo-001/overview
 1. git status
 2. git fetch
 3. git pull
-
+##### 1.2.1 Pushing local changes
+1. git status
+2. git add .
+3. git status
+4. git commit -m "your message"
+5. git push -u origin main
