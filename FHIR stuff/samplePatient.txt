@@ -1,0 +1,7 @@
+Name: John Doe
+Gender: Male
+DOB: 8, September 1997
+Phone: 9876543210
+Email: tornadoalert@gmail.com
+Adreess: 213, Diamond Residency, Manipal, Karnataka
+Pincode: 567104
