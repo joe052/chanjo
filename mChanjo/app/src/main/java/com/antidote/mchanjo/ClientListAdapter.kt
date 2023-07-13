@@ -5,9 +5,6 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.antidote.mchanjo.R
-import com.antidote.mchanjo.Client
-
 
 class ClientListAdapter(private val clientList: List<Client>) :
     RecyclerView.Adapter<ClientListAdapter.ClientViewHolder>() {
