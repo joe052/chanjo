@@ -1,8 +1,19 @@
-version: '3'
+version: '3.7'
 services:
-  server:
-    build: .
+  web:
+    image: "hapiproject/hapi:latest"
     ports:
       - "8080:8080"
+    configs:
+      - source: hapi
+        target: /data/hapi/application.yaml
     volumes:
-      - ./src:/tmp/hapi-fhir-jpaserver-starter/src/
+      - hapi-data:/data/hapi
+    environment:
+      SPRING_CONFIG_LOCATION: 'file:///data/hapi/application.yaml'
+configs:
+  hapi:
+    external: true
+volumes:
+  hapi-data:
+    external: true
