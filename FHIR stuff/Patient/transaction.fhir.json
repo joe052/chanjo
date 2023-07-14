@@ -9,8 +9,8 @@
         "name": [{ "given": ["Helloworld"] }]
       },
       "request": {
-        "method": "POST",
-        "url": "Patient"
+        "method": "PUT",
+        "url": "Patient?name=Helloworld"
       }
     },
     {
