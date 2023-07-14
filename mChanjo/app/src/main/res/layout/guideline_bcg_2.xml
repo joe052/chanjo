@@ -29,7 +29,7 @@
         android:layout_marginEnd="50dp"
         android:fontFamily="@font/josefin_sans"
         android:gravity="center"
-        android:text="@string/BCGGuidelinedescription2"
+        android:text="@string/BCGguidedescription2"
         android:textColor="@color/blackie"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
