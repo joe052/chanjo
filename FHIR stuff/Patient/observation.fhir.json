@@ -1,0 +1,23 @@
+{
+  "resourceType": "Observation",
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "15074-8",
+        "display": "Glucose [Moles/volume] in Blood"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/1",
+    "display": "John Doe"
+  },
+  "valueQuantity": {
+    "value": 6.3,
+    "unit": "mmol/1",
+    "system": "http://unitsofmeasure.org",
+    "code": "mmol/L"
+  }
+}

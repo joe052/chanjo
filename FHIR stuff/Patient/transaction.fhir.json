@@ -1,0 +1,40 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:patient",
+      "resource": {
+        "resourceType": "Patient",
+        "name": [{ "given": ["Helloworld"] }]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Patient?name=Helloworld"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "code": {
+          "coding": [
+            {
+              "code": "testObservation",
+              "system": "SomeSystem",
+              "display": "Test observation for Patient Hello World"
+            }
+          ]
+        },
+        "subject": {
+          "type": "Patient",
+          "reference": "urn:uuid:patient"
+        },
+        "valueInteger": 28
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    }
+  ]
+}
