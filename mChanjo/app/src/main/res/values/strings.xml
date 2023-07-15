@@ -13,16 +13,14 @@
     <string name="title3">Welcome to mChanjo</string>
     <string name="started">Let\'s Get Started</string>
 
-    <string name="select">Select Item</string>
-    <string name="type">Vaccine Type : </string>
-
+    <!--Guidelines-->
     <string name="BCGGuideline">BCG Guidelines</string>
     <string name="BCGGuideDescription">1. Injected on the upper left forearm at the junction of the lower two-thirds and the upper one third.
         2.Administer an injection of 0.05ml of the reconstituted vaccine for infants less than one year old and 0.1 ml for children above 1 year
     </string>
     <string name="BCGGuideDescription1">1.Children under 5years are given at birth or at any age upto 59months.
-        2.
-        Preterm infants should receive the BCG vaccine at the time of discharge from hospital from hospital irrespective of the current weight.</string>
+        2.Preterm infants should receive the BCG vaccine at the time of discharge from hospital from hospital irrespective of the current weight.
+    </string>
     <string name="BCGGuideDescription2">1.For boPV,administer 2 drops orally which constitute one dose,for IPV administer as an intramuscular injection ,right outer thigh,2cm away from PCV site;Hexavalent administered intramuscular.
     </string>
 
@@ -37,7 +35,8 @@
     <string name="hpvDescription3">For pregnant women the vaccination should be avoided due to lack of data</string>
 
 
-
+    <string name="select">Select Item</string>
+    <string name="type">Vaccine Type : </string>
     <string name="dose1">Date of First Dosage :</string>
     <string name="dose2">Date of Second Dosage :</string>
     <string name="dose3">Date of Third Dosage :</string>
