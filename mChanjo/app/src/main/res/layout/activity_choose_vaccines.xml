@@ -16,65 +16,94 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         />
+
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/VaccineReport"
+        android:text="@string/Immunize"
         android:gravity="center"
         android:fontFamily="@font/josefin_sans"
-        android:textSize="30sp"
+        android:textSize="35sp"
         android:layout_marginBottom="30dp"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"/>
 
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/Vaccine"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_margin="20dp"
+        android:backgroundTint="@color/blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        >
         <androidx.appcompat.widget.AppCompatTextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/searchView"
-            app:layout_constraintTop_toBottomOf="@+id/title"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent">
-            <androidx.appcompat.widget.SearchView
-                android:id="@+id/searchViewContent"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_margin="25dp"
-                />
-
-        </androidx.appcompat.widget.AppCompatTextView>
-
-
-    <com.google.android.material.card.MaterialCardView
-        android:id="@+id/firstVaccine"
-        android:layout_width="170dp"
-        android:layout_height="120dp"
-        android:layout_margin="20dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/searchView"
-        >
-
+            android:layout_margin="35dp"
+            android:textColor="@color/white"
+            android:text="@string/HPVName"
+            android:textSize="30sp" />
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="35dp"
+            android:src="@drawable/white_forward"
+            android:layout_gravity="end"/>
     </com.google.android.material.card.MaterialCardView>
+
     <com.google.android.material.card.MaterialCardView
-        android:layout_width="170dp"
+        android:id="@+id/Vaccine2"
+        android:layout_width="match_parent"
         android:layout_height="120dp"
         android:layout_margin="20dp"
+        android:backgroundTint="@color/blue"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/searchView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Vaccine"
         >
-
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="35dp"
+            android:textColor="@color/white"
+            android:text="@string/BCGName"
+            android:textSize="30sp" />
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="35dp"
+            android:src="@drawable/white_forward"
+            android:layout_gravity="end"/>
     </com.google.android.material.card.MaterialCardView>
 
     <com.google.android.material.card.MaterialCardView
-        android:layout_width="170dp"
+        android:id="@+id/Vaccine3"
+        android:layout_width="match_parent"
         android:layout_height="120dp"
         android:layout_margin="20dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="172dp"
+        android:backgroundTint="@color/blue"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/firstVaccine">
-
+        app:layout_constraintTop_toBottomOf="@id/Vaccine2"
+        >
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="35dp"
+            android:textColor="@color/white"
+            android:text="@string/malariaName"
+            android:textSize="30sp" />
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="35dp"
+            android:src="@drawable/white_forward"
+            android:layout_gravity="end"/>
     </com.google.android.material.card.MaterialCardView>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

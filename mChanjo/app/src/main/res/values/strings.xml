@@ -35,6 +35,7 @@
     <string name="hpvDescription3">For pregnant women the vaccination should be avoided due to lack of data</string>
 
     <!--vaccines-->
+    <string name="Immunize">Immunize Client</string>
     <string name="select">Select Item</string>
     <string name="type">Vaccine Type : </string>
     <string name="dose1">Date of First Dosage :</string>

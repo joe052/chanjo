@@ -5,7 +5,7 @@
     android:id="@+id/coordinatorLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".vaccines.Covid">
+    tools:context=".vaccines.HPV">
 
     <androidx.constraintlayout.utils.widget.ImageFilterView
         android:id="@+id/imageView"
@@ -149,6 +149,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/submitButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="submit"

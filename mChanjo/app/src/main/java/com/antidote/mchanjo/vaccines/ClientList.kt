@@ -17,21 +17,6 @@ class ClientList : AppCompatActivity() {
     private lateinit var clientListAdapter: ClientListAdapter
     private lateinit var clientList: ArrayList<Client>
 
-//   override fun onCreate(savedInstanceState: Bundle?) {
-//        super.onCreate(savedInstanceState)
-//        setContentView(R.layout.view_list)
-//
-//        clientList = ArrayList()
-//        clientList.add(Client("John Doe", "Male"))
-//        clientList.add(Client("Jane Smith", "Female"))
-//
-//        recyclerView = findViewById(R.id.recyclerView)
-//        recyclerView.layoutManager = LinearLayoutManager(this)
-//        clientListAdapter = ClientListAdapter(clientList)
-//        recyclerView.adapter = clientListAdapter
-//    }
-//}
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.view_list)
