@@ -20,7 +20,7 @@
         android:id="@+id/covid1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/covid1"
+        android:text="@string/malariaName"
         android:gravity="center"
         android:fontFamily="@font/josefin_sans"
         android:textSize="30sp"
@@ -31,7 +31,7 @@
         android:id="@+id/covid2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/covid2"
+        android:text="@string/VaccineReport"
         android:gravity="center"
         android:fontFamily="@font/josefin_sans"
         android:textSize="20sp"
@@ -54,7 +54,7 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/selection_type"
-        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
@@ -136,14 +136,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/type_text3">
 
-    <AutoCompleteTextView
-        android:id="@+id/auto_complete_txt2"
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:inputType="none"
-        android:gravity="center"
-        android:hint="@string/calendar"
-        android:drawableEnd="@drawable/baseline_calendar_month_24"/>
+        <AutoCompleteTextView
+            android:id="@+id/auto_complete_txt2"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:inputType="none"
+            android:gravity="center"
+            android:hint="@string/calendar"
+            android:drawableEnd="@drawable/baseline_calendar_month_24"/>
     </com.google.android.material.textfield.TextInputLayout>
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/type_text4"
@@ -169,26 +169,26 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/type_text4">
 
-    <AutoCompleteTextView
-        android:id="@+id/auto_complete_txt3"
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:inputType="none"
-        android:gravity="center"
-        android:hint="@string/calendar"
-        android:drawableEnd="@drawable/baseline_calendar_month_24"/>
+        <AutoCompleteTextView
+            android:id="@+id/auto_complete_txt3"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:inputType="none"
+            android:gravity="center"
+            android:hint="@string/calendar"
+            android:drawableEnd="@drawable/baseline_calendar_month_24"/>
     </com.google.android.material.textfield.TextInputLayout>
-<androidx.appcompat.widget.AppCompatButton
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="submit"
-    android:textColor="@color/grey"
-    android:background="@color/black"
-    android:layout_margin="20dp"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toBottomOf="@+id/selection_type3"
-    />
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="submit"
+        android:textColor="@color/grey"
+        android:background="@color/blue"
+        android:layout_margin="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selection_type3"
+        />
 
 
 

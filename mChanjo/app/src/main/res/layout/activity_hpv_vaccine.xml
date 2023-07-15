@@ -12,149 +12,45 @@
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:src="@drawable/img004"
-        app:layout_constraintBottom_toTopOf="@+id/title"
+        app:layout_constraintBottom_toTopOf="@+id/covid1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         />
     <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/title"
+        android:id="@+id/covid1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Client Registration"
+        android:text="@string/HPVName"
         android:gravity="center"
         android:fontFamily="@font/josefin_sans"
-        android:textSize="25sp"
+        android:textSize="30sp"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"/>
-
-
     <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/type_text2"
+        android:id="@+id/covid2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_marginStart="30dp"
-        android:text="1. Personal Information"
+        android:text="@string/VaccineReport"
+        android:gravity="center"
+        android:fontFamily="@font/josefin_sans"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/covid1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/type_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/type"
         android:textSize="20sp"
         app:fontFamily="@font/josefin_sans"
-        app:layout_constraintTop_toBottomOf="@id/title"
+        app:layout_constraintTop_toBottomOf="@+id/covid2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
     </androidx.appcompat.widget.AppCompatTextView>
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/ClientFirstName"
-        style="@style/Widget.Material3.MaterialCalendar.Year.Today"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginTop="10dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/type_text2">
-
-        <EditText
-            android:id="@+id/fistName"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:inputType="none"
-            android:hint="First Name" />
-
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/ClientSecondName"
-        style="@style/Widget.Material3.MaterialCalendar.Year.Today"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginTop="10dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ClientFirstName">
-
-        <EditText
-            android:id="@+id/SecondName"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:inputType="none"
-            android:hint="Second Name" />
-
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/ClientLastName"
-        style="@style/Widget.Material3.MaterialCalendar.Year.Today"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginTop="10dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ClientSecondName">
-
-        <EditText
-            android:id="@+id/lastName"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:inputType="none"
-            android:hint="Last Name" />
-
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/secondTitle"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_marginStart="30dp"
-        android:text="2. Date of Birth"
-        android:textSize="20sp"
-        app:fontFamily="@font/josefin_sans"
-        app:layout_constraintTop_toBottomOf="@id/ClientLastName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"/>
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/DateOfBirth"
-        style="@style/Widget.Material3.MaterialCalendar.Year.Today"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginTop="10dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/secondTitle">
-
-    <AutoCompleteTextView
-        android:id="@+id/auto_complete_txt1"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:inputType="none"
-        android:gravity="center"
-        android:hint="@string/calendar"
-        android:drawableEnd="@drawable/calendar_with_margin"/>
-
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/ThirdTitle"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_marginStart="30dp"
-        android:text="3. Gender"
-        android:textSize="20sp"
-        app:fontFamily="@font/josefin_sans"
-        app:layout_constraintTop_toBottomOf="@id/DateOfBirth"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"/>
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/selection_type"
@@ -163,11 +59,10 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:layout_marginTop="10dp"
         android:hint="@string/select"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ThirdTitle">
+        app:layout_constraintTop_toBottomOf="@+id/type_text">
 
 
         <AutoCompleteTextView
@@ -179,30 +74,121 @@
             />
     </com.google.android.material.textfield.TextInputLayout>
 
-    <!--button-->
-    <androidx.appcompat.widget.AppCompatButton
-        android:layout_width="wrap_content"
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/type_text2"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:text="@string/back"
-        android:textColor="@color/blue"
-        android:background="@drawable/border"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent">
-
-    </androidx.appcompat.widget.AppCompatButton>
-    <androidx.appcompat.widget.AppCompatButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:text="@string/next"
-        android:textColor="@color/white"
-        android:background="@drawable/button"
+        android:layout_margin="10dp"
+        android:text="@string/dose1"
+        android:textSize="20sp"
+        app:fontFamily="@font/josefin_sans"
+        app:layout_constraintTop_toBottomOf="@id/selection_type"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent">
+        app:layout_constraintStart_toStartOf="parent">
 
-    </androidx.appcompat.widget.AppCompatButton>
+    </androidx.appcompat.widget.AppCompatTextView>
 
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/selection_type1"
+        style="@style/Widget.Material3.MaterialCalendar.Year.Today"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/type_text2">
+
+        <AutoCompleteTextView
+            android:id="@+id/auto_complete_txt1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:inputType="none"
+            android:gravity="center"
+            android:hint="@string/calendar"
+            android:drawableEnd="@drawable/baseline_calendar_month_24"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/type_text3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/dose2"
+        android:textSize="20sp"
+        app:fontFamily="@font/josefin_sans"
+        app:layout_constraintTop_toBottomOf="@id/selection_type1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </androidx.appcompat.widget.AppCompatTextView>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/selection_type2"
+        style="@style/Widget.Material3.MaterialCalendar.Year.Today"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/type_text3">
+
+        <AutoCompleteTextView
+            android:id="@+id/auto_complete_txt2"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:inputType="none"
+            android:gravity="center"
+            android:hint="@string/calendar"
+            android:drawableEnd="@drawable/baseline_calendar_month_24"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/type_text4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/appointment"
+        android:textSize="20sp"
+        app:fontFamily="@font/josefin_sans"
+        app:layout_constraintTop_toBottomOf="@id/selection_type2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </androidx.appcompat.widget.AppCompatTextView>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/selection_type3"
+        style="@style/Widget.Material3.MaterialCalendar.Year.Today"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/type_text4">
+
+        <AutoCompleteTextView
+            android:id="@+id/auto_complete_txt3"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:inputType="none"
+            android:gravity="center"
+            android:hint="@string/calendar"
+            android:drawableEnd="@drawable/baseline_calendar_month_24"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="submit"
+        android:textColor="@color/grey"
+        android:background="@color/blue"
+        android:layout_margin="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selection_type3"
+        />
 
 
 

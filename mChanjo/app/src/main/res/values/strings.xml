@@ -34,7 +34,7 @@
     <string name="hpvDescription2">HIV patients should receive a 3-dose schedule(0,1-2,6 months)</string>
     <string name="hpvDescription3">For pregnant women the vaccination should be avoided due to lack of data</string>
 
-
+    <!--vaccines-->
     <string name="select">Select Item</string>
     <string name="type">Vaccine Type : </string>
     <string name="dose1">Date of First Dosage :</string>
@@ -43,8 +43,14 @@
     <string name="dose4">Date of Fourth Dosage :</string>
     <string name="appointment"> Book appointment :</string>
     <string name="calendar">dd/mm/yyyy</string>
-    <string name="covid1">Covid-19 Vaccination report </string>
-    <string name="covid2">please fill the report below </string>
+    <string name="BCGName">BCG Immunization</string>
+    <string name="malariaName">Malaria Vaccine</string>
+    <string name="HPVName">HPV Vaccine</string>
+    <string name="VaccineReport">please fill the report below </string>
+
+    <!--buttons-->
+    <string name="Next">Next</string>
+    <string name="back">Back</string>
 
 
 
