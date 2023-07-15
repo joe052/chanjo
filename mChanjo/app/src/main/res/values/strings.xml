@@ -22,6 +22,18 @@
     </string>
     <string name="BCGguidedescription2">1.Children under 5years are given at birth or at any age upto 59months. 2.
         Preterm infants should receive the BCG vaccine at the time of discharge from hospital from hospital irrespective of the current weight.</string>
+
+    <string name="malariaGuideline">MALARIA GUIDELINE</string>
+    <string name="malariaDescription1">administered by injection to the left detloid muscle at 6,7,9 and 24 months of age</string>
+    <string name="malariaDescription2">Administered seasonally with a 5 dose strategy in areas with highly seasonal malaria or perennial malaria transmission with seasonal peaks</string>
+    <string name="malariaDescription3">Malnourished or HIV positive infants should be vaccinated with RTS,S/AS01 vaccine using a standard schedule</string>
+
+    <string name="hpvGuideline">HPV GUIDELINE</string>
+    <string name="hpvDescription1">For 10 year old girls 2-dose schedule,0.5m/s intramuscularly in the left deltoid for 6 months apart</string>
+    <string name="hpvDescription2">HIV patients should receive a 3-dose schedule(0,1-2,6 months)</string>
+    <string name="hpvDescription3">For pregnant women the vaccination should be avoided due to lack of data</string>
+
+
     <string name="dose1">Date of First Dosage :</string>
     <string name="dose2">Date of Second Dosage :</string>
     <string name="dose3">Date of Third Dosage :</string>

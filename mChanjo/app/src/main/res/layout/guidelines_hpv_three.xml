@@ -12,9 +12,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
-        android:textColor="@color/blackie"
+        android:textColor="@color/blue"
         android:fontFamily="@font/josefin_sans"
-        android:text="@string/hpv_guideline"
+        android:text="@string/hpvGuideline"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -29,7 +29,7 @@
         android:layout_marginEnd="50dp"
         android:fontFamily="@font/josefin_sans"
         android:gravity="center"
-        android:text="@string/hpvdescription3"
+        android:text="@string/hpvDescription3"
         android:textColor="@color/blackie"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -54,15 +54,10 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="40dp"
         android:layout_marginBottom="40dp"
-        android:textColor="@color/blackie"
+        android:textColor="@color/blue"
         android:text="@string/next"
         android:textSize="22sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
-
-</androidx.constraintlayout.widget.ConstraintLayout><?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
 
 </androidx.constraintlayout.widget.ConstraintLayout>
