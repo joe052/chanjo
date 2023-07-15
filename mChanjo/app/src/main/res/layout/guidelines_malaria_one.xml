@@ -11,11 +11,11 @@
         android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="40dp"
         android:textColor="@color/blackie"
-        android:fontFamily="@font/josefin_sans"
-        android:text="@string/COVID_19_GUIDELINE"
-        android:textSize="30sp"
+        android:fontfamily="@font/josefin_sans"
+        android:text="@string/MALARIA_GUIDELINE"
+        android:textSize="40sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>
@@ -29,7 +29,7 @@
         android:layout_marginEnd="50dp"
         android:fontFamily="@font/josefin_sans"
         android:gravity="center"
-        android:text="@string/covid19description1"
+        android:text="@string/malariaDescription1"
         android:textColor="@color/blackie"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -37,22 +37,12 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@id/title" />
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="300dp"
-        android:layout_height="300dp"
-        android:layout_marginTop="176dp"
-        android:src="@drawable/img001"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/description" />
 
     <TextView
         android:id="@+id/next2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="40dp"
+        android:layout_marginEnd="50dp"
         android:layout_marginBottom="40dp"
         android:textColor="@color/blackie"
         android:text="@string/next"
