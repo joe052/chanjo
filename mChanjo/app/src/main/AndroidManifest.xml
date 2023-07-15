@@ -28,16 +28,21 @@
             android:exported="false">
         </activity>
         <activity
-            android:name=".vaccines.Covid"
+            android:name=".vaccines.ClientList"
             android:exported="false">
         </activity>
-        <activity
-            android:name=".vaccines.ClientList"
-            android:exported="true">
+        <activity android:name=".vaccines.HPV" android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".vaccines.Malaria" android:exported="false">
+
+        </activity>
+        <activity android:name=".vaccines.BCG" android:exported="false">
+        </activity>
+        <activity android:name=".vaccines.AdministerVaccine" android:exported="false">
         </activity>
 
 

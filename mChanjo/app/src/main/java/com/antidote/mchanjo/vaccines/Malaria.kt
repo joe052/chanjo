@@ -2,18 +2,20 @@ package com.antidote.mchanjo.vaccines
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.AutoCompleteTextView
+import androidx.appcompat.widget.AppCompatButton
 import com.antidote.mchanjo.R
 import com.google.android.material.button.MaterialButton
 import com.google.android.material.textfield.TextInputEditText
 
 class Malaria : AppCompatActivity() {
 
-    private lateinit var submitButton: MaterialButton
-    private lateinit var autoCompleteTextView: TextInputEditText
-    private lateinit var dose1EditText: TextInputEditText
-    private lateinit var dose2EditText: TextInputEditText
-    private lateinit var dose3EditText: TextInputEditText
-    private lateinit var dose4EditText: TextInputEditText
+    private lateinit var submitButton: AppCompatButton
+    private lateinit var autoCompleteTextView: AutoCompleteTextView
+    private lateinit var dose1EditText: AutoCompleteTextView
+    private lateinit var dose2EditText: AutoCompleteTextView
+    private lateinit var dose3EditText: AutoCompleteTextView
+    private lateinit var dose4EditText: AutoCompleteTextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

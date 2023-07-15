@@ -7,6 +7,8 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.google.android.gms.common.api.Api
+
 
 class ClientListAdapter(private val clientList: List<Client>) :
     RecyclerView.Adapter<ClientListAdapter.ClientViewHolder>() {
@@ -34,10 +36,10 @@ class ClientListAdapter(private val clientList: List<Client>) :
     override fun getItemCount(): Int {
         return clientList.size
     }
-}
 
 
-private fun Intent.putExtra(s: String, client: Client) {
 
-}
+private fun Intent.putExtra(s: String, client: Api.Client) {
+
+}}
 
