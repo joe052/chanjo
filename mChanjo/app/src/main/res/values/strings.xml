@@ -14,6 +14,7 @@
     <string name="started">Let\'s Get Started</string>
 
     <!--Guidelines-->
+    <string name="GuidelineTitle">Vaccine Science and Child/Adolescent Immunization Guidelines</string>
     <string name="BCGGuideline">BCG Guidelines</string>
     <string name="BCGGuideDescription">1. Injected on the upper left forearm at the junction of the lower two-thirds and the upper one third.
         2.Administer an injection of 0.05ml of the reconstituted vaccine for infants less than one year old and 0.1 ml for children above 1 year
@@ -52,6 +53,12 @@
     <!--buttons-->
     <string name="Next">Next</string>
     <string name="back">Back</string>
+
+    <string name="vaccineReportTitle">Client\'s Full immunization and Vaccination History</string>
+    <string name="records">IMMUNIZATION RECORDS</string>
+
+    <string name="clientList">Choose Client</string>
+
 
 
 
