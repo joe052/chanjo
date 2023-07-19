@@ -16,7 +16,6 @@ class ClientListAdapter(
         val clientGender: TextView = itemView.findViewById(R.id.clientGender)
     }
 
-
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ClientListViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.activity_client_list, parent, false)
         return ClientListViewHolder(view)
@@ -28,8 +27,8 @@ class ClientListAdapter(
         holder.clientGender.text = client.clientGender
     }
 
-
     override fun getItemCount(): Int {
        return clients.size
     }
+
 }

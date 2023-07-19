@@ -2,8 +2,8 @@ package com.antidote.mchanjo
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
+import androidx.fragment.app.Fragment
+import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -11,6 +11,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.homepage)
 //The below line hides the actionbar to give the splash screen a clear view
         supportActionBar?.hide()
+
         var clientList = mutableListOf(
             Client("Immanuel Kimani","Woman"),
             Client("Joe Karanja","man"),
@@ -33,12 +34,23 @@ class MainActivity : AppCompatActivity() {
             Client("Immanuel Kimani","Woman")
         )
 
-        val recyclerView: RecyclerView = findViewById(R.id.recyclerView)
-        val adapter = ClientListAdapter(clientList)
+        val bottomNavigationView: BottomNavigationView = findViewById(R.id.bottomNav)
+        bottomNavigationView.setOnItemSelectedListener { item ->
+            when (item.itemId) {
+                R.id.imHome -> setCurrentPage(ClientListFragment(clientList))
+                R.id.imGuidelines -> setCurrentPage(GuidelineFragment())
+            }
+            true
+        }
 
-        recyclerView.layoutManager = LinearLayoutManager(this)
-        recyclerView.adapter = adapter
+        // Set the initial page to the ClientListFragment when the activity is created
+        setCurrentPage(ClientListFragment(clientList))
+    }
 
-
+    private fun setCurrentPage(fragment: Fragment) {
+        supportFragmentManager.beginTransaction().apply {
+            replace(R.id.fragmentContainer, fragment) // Use the correct fragment container ID here
+            commit()
+        }
     }
 }
