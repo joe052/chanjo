@@ -39,12 +39,6 @@
     <string name="Immunize">Immunize Client</string>
     <string name="select">Select Item</string>
     <string name="type">Vaccine Type : </string>
-    <string name="dose1">Date of First Dosage :</string>
-    <string name="dose2">Date of Second Dosage :</string>
-    <string name="dose3">Date of Third Dosage :</string>
-    <string name="dose4">Date of Fourth Dosage :</string>
-    <string name="appointment"> Book appointment :</string>
-    <string name="calendar">dd/mm/yyyy</string>
     <string name="BCGName">BCG Immunization</string>
     <string name="malariaName">Malaria Vaccine</string>
     <string name="HPVName">HPV Vaccine</string>
@@ -58,6 +52,8 @@
     <string name="records">IMMUNIZATION RECORDS</string>
 
     <string name="clientList">Choose Client</string>
+
+    <string name="Register">ADD CLIENT</string>
 
 
 
