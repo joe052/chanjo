@@ -54,14 +54,14 @@ dependencies {
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
-
-    //intergrating SDLC library and FHIR
-    implementation 'com.google.android.fhir:data-capture:1.0.0'
-    implementation 'androidx.fragment:fragment-ktx:1.6.0'
-
     implementation 'com.google.android.material:material:1.11.0-alpha01'
 
+    //Add dependencies for Structured Data Capture Library and Fragment KTX
+    implementation("com.google.android.fhir:data-capture:1.0.0")
+    implementation("androidx.fragment:fragment-ktx:1.5.5")
 
+    //Add fhir engine
+    implementation("com.google.android.fhir:engine:0.1.0-beta03")
 
     // Import the Firebase BoM
     implementation(platform("com.google.firebase:firebase-bom:32.1.1"))
