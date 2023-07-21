@@ -36,6 +36,11 @@ android {
     buildFeatures{
         viewBinding true
     }
+
+    packagingOptions {
+        exclude 'META-INF/ASL-2.0.txt'
+        exclude 'META-INF/LGPL-3.0.txt'
+    }
 }
 
 dependencies {
