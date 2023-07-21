@@ -28,7 +28,7 @@ class ClientRecordsFragment : Fragment() {
         // Set click listeners for each card
         bcgCard.setOnClickListener {
             // Show the questionnaire when BCG card is clicked
-            showQuestionnaireFragment("new-patient-registration-paginated.json")
+            showQuestionnaireFragment("Questionnaire-questionnaire-sdc-profile-example-render.json")
         }
 
         hpvCard.setOnClickListener {
@@ -38,7 +38,7 @@ class ClientRecordsFragment : Fragment() {
 
         malariaCard.setOnClickListener {
             // Show the questionnaire when Malaria card is clicked
-            showQuestionnaireFragment("new-patient-registration-paginated.json")
+            showQuestionnaireFragment("Questionnaire-questionnaire-sdc-profile-example-render.json")
         }
 
         return rootView
