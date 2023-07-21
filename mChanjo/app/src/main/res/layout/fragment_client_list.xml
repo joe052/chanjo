@@ -29,7 +29,7 @@
         app:layout_constraintTop_toBottomOf="@id/vaccineReport"/>
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/BackButton"
+        android:id="@+id/AddClientButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/Register"
@@ -46,7 +46,7 @@
         android:text="Register New Client"
         android:textSize="25sp"
         android:layout_margin="10dp"
-        app:layout_constraintBottom_toTopOf="@id/BackButton"
+        app:layout_constraintBottom_toTopOf="@id/AddClientButton"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         />

@@ -55,8 +55,8 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 
     //intergrating SDLC library and FHIR
-    implementation("com.google.android.fhir:data-capture:1.0.0")
-    implementation("androidx.fragment:fragment-ktx:1.6.0")
+    implementation 'com.google.android.fhir:data-capture:1.0.0'
+    implementation 'androidx.fragment:fragment-ktx:1.6.0'
 
     implementation 'com.google.android.material:material:1.11.0-alpha01'
 
