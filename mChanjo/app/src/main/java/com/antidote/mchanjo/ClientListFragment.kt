@@ -5,12 +5,15 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.commit
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.google.android.material.card.MaterialCardView
 
-class ClientListFragment(private val clientList: List<Client>) : Fragment() {
+class ClientListFragment(private val clientList: List<Client>) : Fragment(), ClientListAdapter.OnItemClickListener {
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -18,20 +21,45 @@ class ClientListFragment(private val clientList: List<Client>) : Fragment() {
         val rootView = inflater.inflate(R.layout.fragment_client_list, container, false)
 
         val recyclerView: RecyclerView = rootView.findViewById(R.id.recyclerView)
-        val adapter = ClientListAdapter(clientList)
+
+        // Pass the 'this' reference of the ClientListFragment as the onItemClickListener
+        val adapter = ClientListAdapter(clientList, this)
         recyclerView.layoutManager = LinearLayoutManager(context)
         recyclerView.adapter = adapter
 
-        // Find the button and set a click listener to open the QuestionnaireFragment
+        // Rest of the code remains unchanged
+        for (client in clientList) {
+            val cardView = inflater.inflate(R.layout.activity_client_list, container, false) as MaterialCardView
+            val clientNameTextView = cardView.findViewById<TextView>(R.id.clientName)
+            val clientGenderTextView = cardView.findViewById<TextView>(R.id.clientGender)
+
+            clientNameTextView.text = client.clientName
+            clientGenderTextView.text = client.clientGender
+        }
+
         val addClientButton: Button = rootView.findViewById(R.id.AddClientButton)
 
         addClientButton.setOnClickListener {
             val registerClientFragment = RegisterClientFragment()
             parentFragmentManager.beginTransaction()
-                .replace(R.id.fragment_container_view, registerClientFragment) // Replace fragment_container with the ID of the container where you want to display the RegisterClientFragment
+                .replace(R.id.fragment_container_view, registerClientFragment)
                 .addToBackStack(null)
                 .commit()
         }
+
         return rootView
     }
+
+    override fun onItemClick(client: Client) {
+        val clientRecordsFragment = ClientRecordsFragment()
+        parentFragmentManager.commit {
+            replace(R.id.fragment_container_view, clientRecordsFragment)
+            addToBackStack(null)
+        }
+    }
 }
+
+
+
+
+

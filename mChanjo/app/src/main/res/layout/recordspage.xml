@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".vaccines.ClientList">
+    tools:context=".ClientRecordsFragment">
 
     <!-- ImageFilterView to display an image -->
     <androidx.constraintlayout.utils.widget.ImageFilterView

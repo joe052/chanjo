@@ -8,6 +8,7 @@ plugins {
 android {
     namespace 'com.antidote.mchanjo'
     compileSdk 34
+    buildToolsVersion "30.0.3"
 
     defaultConfig {
         applicationId "com.antidote.mchanjo"

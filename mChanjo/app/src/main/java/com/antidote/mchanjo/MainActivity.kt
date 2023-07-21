@@ -46,13 +46,6 @@ class MainActivity : AppCompatActivity() {
         // Set the initial page to the ClientListFragment when the activity is created
         setCurrentPage(ClientListFragment(clientList))
     }
-
-//    private fun setCurrentPage(fragment: Fragment) {
-//        supportFragmentManager.beginTransaction().apply {
-//            replace(R.id.fragmentContainer, fragment) // Use the correct fragment container ID here
-//            commit()
-//        }
-//    }
     private fun setCurrentPage(fragment: Fragment) {
         supportFragmentManager.beginTransaction().apply {
             replace(R.id.fragment_container_view, fragment) // Use the correct fragment container ID here
