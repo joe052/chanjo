@@ -1,0 +1,61 @@
+{
+  "item": [
+    {
+      "type": "choice",
+      "linkId": "7880645232190",
+      "text": "Type of vaccine ",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "display": "RTS,S/ASO1"
+          }
+        }
+      ]
+    },
+    {
+      "item": [
+        {
+          "text": "the first dose to be administered 6 month old baby ",
+          "type": "display",
+          "linkId": "8661176941404_helpText",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "text": "Help-Button",
+                "coding": [
+                  {
+                    "code": "help",
+                    "display": "Help-Button",
+                    "system": "http://hl7.org/fhir/questionnaire-item-control"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "type": "date",
+      "linkId": "8661176941404",
+      "text": "Date of First Immunization"
+    },
+    {
+      "type": "date",
+      "linkId": "5550341716325",
+      "text": "Date of Second Immunization"
+    },
+    {
+      "type": "date",
+      "linkId": "1705318382367",
+      "text": "Date of Third Immunization"
+    },
+    {
+      "type": "date",
+      "linkId": "6000243697824",
+      "text": "Date of Fourth Immunization"
+    }
+  ],
+  "resourceType": "Questionnaire",
+  "title": "HPV Vaccine Form",
+  "status": "draft"
+}

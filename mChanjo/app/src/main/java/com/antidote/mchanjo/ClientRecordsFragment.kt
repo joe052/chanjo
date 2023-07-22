@@ -1,16 +1,12 @@
 package com.antidote.mchanjo
 
-import android.content.Context
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.fragment.app.commit
-import com.google.android.fhir.datacapture.QuestionnaireFragment
 import com.google.android.material.card.MaterialCardView
-import android.content.res.AssetManager
-import java.io.IOException
 
 class ClientRecordsFragment : Fragment() {
 
@@ -27,49 +23,20 @@ class ClientRecordsFragment : Fragment() {
 
         // Set click listeners for each card
         bcgCard.setOnClickListener {
-            // Show the questionnaire when BCG card is clicked
-            showQuestionnaireFragment("Questionnaire-questionnaire-sdc-profile-example-render.json")
+            val intent = Intent(context, BCGVaccineQuestionnaireActivity::class.java)
+            startActivity(intent)
         }
 
         hpvCard.setOnClickListener {
-            // Show the questionnaire when HPV card is clicked
-            showQuestionnaireFragment("new-patient-registration-paginated.json")
+            val intent = Intent(context, HPVVaccineQuestionnaireActivity::class.java)
+            startActivity(intent)
         }
 
         malariaCard.setOnClickListener {
-            // Show the questionnaire when Malaria card is clicked
-            showQuestionnaireFragment("Questionnaire-questionnaire-sdc-profile-example-render.json")
+            val intent = Intent(context, MalariaVaccineQuestionnaireActivity::class.java)
+            startActivity(intent)
         }
-
         return rootView
-    }
-    private fun showQuestionnaireFragment(questionnaireFileName: String) {
-        val questionnaireJson = readQuestionnaireFromAssets(questionnaireFileName, requireContext())
-        val questionnaireFragment = QuestionnaireFragment.Builder()
-            .setQuestionnaire(questionnaireJson)
-            .build()
-
-        parentFragmentManager.commit {
-            replace(R.id.fragment_container_view, questionnaireFragment)
-            addToBackStack(null)
-        }
-    }
-    private fun readQuestionnaireFromAssets(fileName: String, context: Context): String {
-        try {
-            // Open the JSON file from the assets folder and read its content
-            val inputStream = context.assets.open(fileName)
-            val size = inputStream.available()
-            val buffer = ByteArray(size)
-            inputStream.read(buffer)
-            inputStream.close()
-
-            // Convert the bytes to a String and return the JSON content
-            return String(buffer)
-        } catch (ex: IOException) {
-            ex.printStackTrace()
-        }
-
-        return ""
     }
 }
 

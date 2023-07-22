@@ -5,7 +5,7 @@ import android.os.Bundle
 import androidx.fragment.app.commit
 import com.google.android.fhir.datacapture.QuestionnaireFragment
 
-class RegisterQuestionnaireActivity : AppCompatActivity() {
+class BCGVaccineQuestionnaireActivity : AppCompatActivity() {
 
     var questionnaireJsonString: String? = null
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -13,7 +13,7 @@ class RegisterQuestionnaireActivity : AppCompatActivity() {
         setContentView(R.layout.register_client)
 
         //Add a questionnaire fragment.
-        questionnaireJsonString = getStringFromAssets("new-patient-registration-paginated.json")
+        questionnaireJsonString = getStringFromAssets("BCG-Immunization-Form.R4.json")
 
         if (savedInstanceState == null) {
             supportFragmentManager.commit {
