@@ -11,7 +11,8 @@ import com.google.android.fhir.datacapture.QuestionnaireFragment
 
 class RegisterClientFragment : Fragment() {
 
-    private val questionnaireFragmentTag = "QuestionnaireFragmentTag"
+//    private val questionnaireFragmentTag = "QuestionnaireFragmentTag"
+    var questionnaireJsonString: String? = null
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -19,36 +20,15 @@ class RegisterClientFragment : Fragment() {
     ): View? {
         val rootView = inflater.inflate(R.layout.register_client, container, false)
 
-        // Step 2: Configure a QuestionnaireFragment
-        val questionnaireJsonString = getStringFromAssets("Questionnaire-questionnaire-sdc-profile-example-render.json")
+        //Add a questionnaire fragment.
+        questionnaireJsonString = getStringFromAssets("patient2_questionnaire.json")
 
-        if (questionnaireJsonString != null) {
-            Log.d("JSON", questionnaireJsonString)
-        }
-
-        if (savedInstanceState == null) {
-            childFragmentManager.commit {
-                setReorderingAllowed(true)
-                add(
-                    R.id.fragment_container_view,
-                    QuestionnaireFragment.builder().setQuestionnaire(questionnaireJsonString!!).build()
-                )
-            }
-        }
-
-
-
-//        val questionnaireJson = requireContext().assets.open("Questionnaire-questionnaire-sdc-profile-example-render.json").bufferedReader().use { it.readText() }
-//
-//        Log.d("JSON", questionnaireJson)
-//
 //        if (savedInstanceState == null) {
-//            childFragmentManager.commit {
+//            supportFragmentManager.commit {
 //                setReorderingAllowed(true)
 //                add(
-//                    R.id.fragment_container_view, // Use the correct container ID here
-//                    QuestionnaireFragment.Builder().setQuestionnaire(questionnaireJson).build(),
-//                    questionnaireFragmentTag
+//                    R.id.fragment_container_view,
+//                    QuestionnaireFragment.builder().setQuestionnaire(questionnaireJsonString!!).build()
 //                )
 //            }
 //        }
