@@ -18,25 +18,8 @@ class MainActivity : AppCompatActivity() {
         supportActionBar?.hide()
 
         var clientList = mutableListOf(
-            Client("Immanuel Kimani","Woman"),
             Client("Joe Karanja","man"),
             Client("Blessed Kimani","man"),
-            Client("Imma Kinuthia","Woman"),
-            Client("manuel Kimani","Woman"),
-            Client("manuh Kim","Woman"),
-            Client("wilberforce Kienyeji","Woman"),
-            Client("MR Immanuel Kimani","Woman"),
-            Client("Immanuel Kimani","Woman"),
-            Client("Immanuel Kimani","Woman"),
-            Client("Immanuel Kimani","Woman"),
-            Client("Immanuel Kimani","Woman"),
-            Client("Immanuel Kimani","Woman"),
-            Client("Immanuel Kimani","Woman"),
-            Client("Immanuel Kimani","Woman"),
-            Client("Immanuel Kimani","Woman"),
-            Client("Immanuel Kimani","Woman"),
-            Client("Immanuel Kimani","Woman"),
-            Client("Immanuel Kimani","Woman")
         )
 
         val bottomNavigationView: BottomNavigationView = findViewById(R.id.bottomNav)

@@ -38,8 +38,16 @@ class ClientListFragment(private val clientList: List<Client>) : Fragment(), Cli
         return rootView
     }
 
+
     override fun onItemClick(client: Client) {
         val clientRecordsFragment = ClientRecordsFragment()
+
+        // Pass client details as arguments to the ClientRecordsFragment
+        val bundle = Bundle()
+        bundle.putString("CLIENT_NAME", client.clientName)
+        bundle.putString("CLIENT_GENDER", client.clientGender)
+        clientRecordsFragment.arguments = bundle
+
         parentFragmentManager.commit {
             replace(R.id.fragment_container_view, clientRecordsFragment)
             addToBackStack(null)
