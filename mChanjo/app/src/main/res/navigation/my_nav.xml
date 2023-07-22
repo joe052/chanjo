@@ -44,14 +44,30 @@
         tools:layout="@layout/activity_guidelines">
     </fragment>
     <fragment
-        android:id="@+id/viewGuidelinesPageFragment"
-        android:name="com.antidote.mchanjo.guidelines.ViewGuidelinesPageFragment"
-        android:label="fragment_view_pager"
-        tools:layout="@layout/fragment_view_pager">
+        android:id="@+id/malariaGuidelinefirstPage"
+        android:name="com.antidote.mchanjo.guidelines.MalariaFirstScreen"
+        android:label="fragment_malaria_fist_page"
+        tools:layout="@layout/guidelines_malaria_one">
         <action
             android:id="@+id/action_viewGuidelinesPageFragment_to_guidelineFragment"
-            app:destination="@id/guidelineFragment"
-            app:popUpTo="@id/viewGuidelinesPageFragment"
-            app:popUpToInclusive="true" />
+            app:destination="@id/malariaGuidelineSecondPage" />
+    </fragment>
+    <fragment
+        android:id="@+id/malariaGuidelineSecondPage"
+        android:name="com.antidote.mchanjo.guidelines.MalariaSecondScreen"
+        android:label="fragment_malaria_second_page"
+        tools:layout="@layout/guidelines_malaria_two">
+        <action
+            android:id="@+id/action_viewGuidelinesPageFragment_to_guidelineFragment"
+            app:destination="@id/malariaGuidelineThirdPage" />
+    </fragment>
+    <fragment
+        android:id="@+id/malariaGuidelineThirdPage"
+        android:name="com.antidote.mchanjo.guidelines.MalariaThirdScreen"
+        android:label="fragment_malaria_third_page"
+        tools:layout="@layout/guidelines_malaria_three">
+        <action
+            android:id="@+id/action_viewGuidelinesPageFragment_to_guidelineFragment"
+            app:destination="@id/guidelineFragment" />
     </fragment>
 </navigation>

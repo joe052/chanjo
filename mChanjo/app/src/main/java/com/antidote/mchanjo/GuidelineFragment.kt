@@ -33,7 +33,7 @@ class GuidelineFragment : Fragment() {
 
         malariaButton.setOnClickListener {
             // Navigate to the Malaria guideline page (Replace the destination with your desired fragment)
-            findNavController().navigate(R.id.viewGuidelinesPageFragment)
+            //findNavController().navigate(R.id.viewGuidelinesPageFragment)
         }
 
         return rootView

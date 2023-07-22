@@ -1,5 +1,6 @@
 package com.antidote.mchanjo
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -27,24 +28,13 @@ class ClientListFragment(private val clientList: List<Client>) : Fragment(), Cli
         recyclerView.layoutManager = LinearLayoutManager(context)
         recyclerView.adapter = adapter
 
-        // Rest of the code remains unchanged
-        for (client in clientList) {
-            val cardView = inflater.inflate(R.layout.activity_client_list, container, false) as MaterialCardView
-            val clientNameTextView = cardView.findViewById<TextView>(R.id.clientName)
-            val clientGenderTextView = cardView.findViewById<TextView>(R.id.clientGender)
-
-            clientNameTextView.text = client.clientName
-            clientGenderTextView.text = client.clientGender
-        }
-
         val addClientButton: Button = rootView.findViewById(R.id.AddClientButton)
 
-        addClientButton.setOnClickListener {
-            val registerClientFragment = RegisterClientFragment()
-            parentFragmentManager.beginTransaction()
-                .replace(R.id.fragment_container_view, registerClientFragment)
-                .addToBackStack(null)
-                .commit()
+        // Set the click listener for the button
+        addClientButton.setOnClickListener{
+            // Navigate to another activity when the button is clicked
+            val intent = Intent(context, RegisterQuestionnaireActivity::class.java)
+            startActivity(intent)
         }
 
         return rootView
@@ -58,6 +48,7 @@ class ClientListFragment(private val clientList: List<Client>) : Fragment(), Cli
         }
     }
 }
+
 
 
 
