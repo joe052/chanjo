@@ -50,15 +50,6 @@ class MainActivity : AppCompatActivity() {
 
         // Set the initial page to the ClientListFragment when the activity is created
         setCurrentPage(ClientListFragment(clientList))
-
-        val goToAnotherActivityButton = findViewById<Button>(R.id.AddClientButton)
-
-        // Set the click listener for the button
-        goToAnotherActivityButton.setOnClickListener {
-            // Navigate to another activity when the button is clicked
-            val intent = Intent(this, RegisterQuestionnaireActivity::class.java)
-            startActivity(intent)
-        }
     }
     private fun setCurrentPage(fragment: Fragment) {
         supportFragmentManager.beginTransaction().apply {
