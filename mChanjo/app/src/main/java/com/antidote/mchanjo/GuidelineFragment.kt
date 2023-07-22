@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
 import androidx.appcompat.widget.AppCompatButton
 import androidx.navigation.fragment.findNavController
 
@@ -32,7 +33,7 @@ class GuidelineFragment : Fragment() {
 
         malariaButton.setOnClickListener {
             // Navigate to the Malaria guideline page (Replace the destination with your desired fragment)
-            //findNavController().navigate(/* Replace with the Malaria guideline destination */)
+            findNavController().navigate(R.id.viewGuidelinesPageFragment)
         }
 
         return rootView
