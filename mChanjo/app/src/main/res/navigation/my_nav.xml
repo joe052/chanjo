@@ -37,4 +37,21 @@
         android:name="com.antidote.mchanjo.authentication.LoginActivity"
         android:label="activity_login"
         tools:layout="@layout/activity_login" />
+    <fragment
+        android:id="@+id/guidelineFragment"
+        android:name="com.antidote.mchanjo.GuidelineFragment"
+        android:label="fragment_guidelines"
+        tools:layout="@layout/activity_guidelines">
+    </fragment>
+    <fragment
+        android:id="@+id/viewGuidelinesPageFragment"
+        android:name="com.antidote.mchanjo.guidelines.ViewGuidelinesPageFragment"
+        android:label="fragment_view_pager"
+        tools:layout="@layout/fragment_view_pager">
+        <action
+            android:id="@+id/action_viewGuidelinesPageFragment_to_guidelineFragment"
+            app:destination="@id/guidelineFragment"
+            app:popUpTo="@id/viewGuidelinesPageFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
 </navigation>

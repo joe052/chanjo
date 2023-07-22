@@ -1,18 +1,16 @@
-package com.antidote.mchanjo.onboarding
+package com.antidote.mchanjo.guidelines
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import androidx.viewpager2.widget.ViewPager2
 import com.antidote.mchanjo.R
-import com.antidote.mchanjo.guidelines.ViewGuidelinesPageAdapter
-import com.antidote.mchanjo.onboarding.screens.FirstScreen
-import com.antidote.mchanjo.onboarding.screens.SecondScreen
-import com.antidote.mchanjo.onboarding.screens.ThirdScreen
 
-class ViewPagerFragment : Fragment() {
+
+
+class ViewGuidelinesPageFragment : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -23,9 +21,9 @@ class ViewPagerFragment : Fragment() {
         val view = inflater.inflate(R.layout.fragment_view_pager, container, false)
 
         val fragmentList = arrayListOf<Fragment>(
-            FirstScreen(),
-            SecondScreen(),
-            ThirdScreen()
+            MalariaFirstScreen(),
+            MalariaSecondScreen(),
+            MalariaThirdScreen()
         )
         val adapter = ViewGuidelinesPageAdapter(fragmentList,requireActivity().supportFragmentManager, lifecycle)
         view.findViewById<ViewPager2>(R.id.viewPager).adapter = adapter
