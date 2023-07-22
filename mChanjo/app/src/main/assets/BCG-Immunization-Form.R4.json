@@ -1,0 +1,46 @@
+{
+  "item": [
+    {
+      "type": "choice",
+      "linkId": "7880645232190",
+      "text": "Type of vaccine ",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "display": "BCG"
+          }
+        }
+      ]
+    },
+    {
+      "item": [
+        {
+          "text": "To be administered at birth or to kids up-to 59 months ",
+          "type": "display",
+          "linkId": "8661176941404_helpText",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "text": "Help-Button",
+                "coding": [
+                  {
+                    "code": "help",
+                    "display": "Help-Button",
+                    "system": "http://hl7.org/fhir/questionnaire-item-control"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "type": "date",
+      "linkId": "8661176941404",
+      "text": "Date of Immunization"
+    }
+  ],
+  "resourceType": "Questionnaire",
+  "title": "BCG Immunization Form",
+  "status": "draft"
+}

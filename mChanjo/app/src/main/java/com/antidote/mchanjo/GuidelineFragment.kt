@@ -1,13 +1,15 @@
 package com.antidote.mchanjo
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.appcompat.widget.AppCompatButton
-import androidx.navigation.fragment.findNavController
+import com.antidote.mchanjo.guidelines.BCGFirstScreen
+import com.antidote.mchanjo.guidelines.HPVFirstScreen
+import com.antidote.mchanjo.guidelines.MalariaFirstScreen
 
 class GuidelineFragment : Fragment() {
     override fun onCreateView(
@@ -22,18 +24,18 @@ class GuidelineFragment : Fragment() {
 
         // Set click listeners for each button to navigate to the corresponding guideline page
         bcgButton.setOnClickListener {
-            // Navigate to the BCG guideline page (Replace the destination with your desired fragment)
-            //findNavController().navigate(/* Replace with the BCG guideline destination */)
+            val intent = Intent(context, BCGFirstScreen::class.java)
+            startActivity(intent)
         }
 
         hpvButton.setOnClickListener {
-            // Navigate to the HPV guideline page (Replace the destination with your desired fragment)
-            //findNavController().navigate(/* Replace with the HPV guideline destination */)
+            val intent = Intent(context, HPVFirstScreen::class.java)
+            startActivity(intent)
         }
 
         malariaButton.setOnClickListener {
-            // Navigate to the Malaria guideline page (Replace the destination with your desired fragment)
-            //findNavController().navigate(R.id.viewGuidelinesPageFragment)
+            val intent = Intent(context, MalariaFirstScreen::class.java)
+            startActivity(intent)
         }
 
         return rootView

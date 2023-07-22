@@ -7,7 +7,6 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.viewpager2.widget.ViewPager2
 import com.antidote.mchanjo.R
-import com.antidote.mchanjo.guidelines.ViewGuidelinesPageAdapter
 import com.antidote.mchanjo.onboarding.screens.FirstScreen
 import com.antidote.mchanjo.onboarding.screens.SecondScreen
 import com.antidote.mchanjo.onboarding.screens.ThirdScreen
@@ -27,7 +26,7 @@ class ViewPagerFragment : Fragment() {
             SecondScreen(),
             ThirdScreen()
         )
-        val adapter = ViewGuidelinesPageAdapter(fragmentList,requireActivity().supportFragmentManager, lifecycle)
+        val adapter = ViewPagerAdapter(fragmentList,requireActivity().supportFragmentManager, lifecycle)
         view.findViewById<ViewPager2>(R.id.viewPager).adapter = adapter
         return view
     }

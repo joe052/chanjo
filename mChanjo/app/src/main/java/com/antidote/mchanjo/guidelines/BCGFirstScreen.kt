@@ -5,17 +5,19 @@ import android.os.Bundle
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.antidote.mchanjo.R
-class MalariaSecondScreen : AppCompatActivity(){
+
+
+class BCGFirstScreen : AppCompatActivity(){
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.guidelines_malaria_two)
+        setContentView(R.layout.guideline_bcg_1)
 
         val nextTextView: TextView = findViewById(R.id.next2)
 
         nextTextView.setOnClickListener {
             // Create an Intent to start the TargetActivity
-            val intent = Intent(this, MalariaThirdScreen::class.java)
+            val intent = Intent(this, BCGSecondScreen::class.java)
 
             // Start the TargetActivity
             startActivity(intent)

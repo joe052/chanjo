@@ -1,0 +1,76 @@
+{
+  "item": [
+    {
+      "type": "choice",
+      "linkId": "7880645232190",
+      "text": "Type of vaccine ",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "display": "Gardasil"
+          }
+        },
+        {
+          "valueCoding": {
+            "display": "Gardasil-4"
+          }
+        },
+        {
+          "valueCoding": {
+            "display": "Gardasil-6"
+          }
+        },
+        {
+          "valueCoding": {
+            "display": "Gardasil-9"
+          }
+        },
+        {
+          "valueCoding": {
+            "display": "Silgard"
+          }
+        },
+        {
+          "valueCoding": {
+            "display": "Cervarix"
+          }
+        }
+      ]
+    },
+    {
+      "item": [
+        {
+          "text": "To be administered to females over the age of 9-15 years or those who are sexually active ",
+          "type": "display",
+          "linkId": "8661176941404_helpText",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "text": "Help-Button",
+                "coding": [
+                  {
+                    "code": "help",
+                    "display": "Help-Button",
+                    "system": "http://hl7.org/fhir/questionnaire-item-control"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "type": "date",
+      "linkId": "8661176941404",
+      "text": "Date of First Immunization"
+    },
+    {
+      "type": "date",
+      "linkId": "5550341716325",
+      "text": "Date of Second Immunization"
+    }
+  ],
+  "resourceType": "Questionnaire",
+  "title": "HPV Vaccine Form",
+  "status": "draft"
+}

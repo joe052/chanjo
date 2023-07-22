@@ -1,29 +1,25 @@
 package com.antidote.mchanjo.guidelines
 
+import android.content.Intent
 import android.os.Bundle
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
 import android.widget.TextView
-import androidx.fragment.app.Fragment
-import androidx.viewpager2.widget.ViewPager2
+import androidx.appcompat.app.AppCompatActivity
 import com.antidote.mchanjo.R
 
+class MalariaFirstScreen : AppCompatActivity(){
 
-class MalariaFirstScreen : Fragment() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.guidelines_malaria_one)
 
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        // Inflate the layout for this fragment
-        val view = inflater.inflate(R.layout.guidelines_malaria_one, container, false)
-        val viewPager = activity?.findViewById<ViewPager2>(R.id.viewPager)
+         val nextTextView: TextView = findViewById(R.id.next2)
 
-        view.findViewById<TextView>(R.id.next2).setOnClickListener {
-            viewPager?.currentItem = 1
+         nextTextView.setOnClickListener {
+        // Create an Intent to start the TargetActivity
+            val intent = Intent(this, MalariaSecondScreen::class.java)
+
+        // Start the TargetActivity
+            startActivity(intent)
         }
-
-        return view
     }
 }

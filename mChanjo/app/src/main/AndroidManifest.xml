@@ -32,6 +32,34 @@
         </activity>
         <activity android:name=".RegisterQuestionnaireActivity"
             android:exported="false"/>
+        <activity android:name=".BCGVaccineQuestionnaireActivity"
+            android:exported="false"/>
+        <activity android:name=".HPVVaccineQuestionnaireActivity"
+            android:exported="false"/>
+        <activity android:name=".MalariaVaccineQuestionnaireActivity"
+            android:exported="false"/>
+        <activity android:name=".guidelines.MalariaFirstScreen"
+            android:exported="false"/>
+        <activity android:name=".guidelines.MalariaSecondScreen"
+            android:exported="false"/>
+        <activity android:name=".guidelines.MalariaThirdScreen"
+            android:exported="false"/>
+        <activity android:name=".guidelines.GuidelinesChoiceActivity"
+            android:exported="false"/>
+        <activity android:name=".guidelines.BCGFirstScreen"
+            android:exported="false"/>
+        <activity android:name=".guidelines.BCGSecondScreen"
+            android:exported="false"/>
+        <activity android:name=".guidelines.BCGThirdScreen"
+            android:exported="false"/>
+        <activity android:name=".guidelines.HPVFirstScreen"
+            android:exported="false"/>
+        <activity android:name=".guidelines.HPVSecondScreen"
+            android:exported="false"/>
+        <activity android:name=".guidelines.HPVThirdScreen"
+            android:exported="false"/>
+
+
 
 
         <meta-data
