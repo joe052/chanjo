@@ -10,8 +10,6 @@ import androidx.fragment.app.commit
 import com.google.android.fhir.datacapture.QuestionnaireFragment
 
 class RegisterClientFragment : Fragment() {
-
-    //private val questionnaireFragmentTag = "QuestionnaireFragmentTag"
     private var questionnaireJsonString: String? = null
 
     override fun onCreateView(
@@ -22,6 +20,18 @@ class RegisterClientFragment : Fragment() {
 
         //Add a questionnaire fragment.
         questionnaireJsonString = getStringFromAssets("Questionnaire-questionnaire-sdc-profile-example-render.json")
+
+//        if (savedInstanceState == null) {
+//            rootView.post {
+//                requireActivity().supportFragmentManager.commit {
+//                    add(
+//                        R.id.fragment_container_view,
+//                        QuestionnaireFragment.builder().setQuestionnaire(questionnaireJsonString!!).build()
+//                    )
+//                }
+//            }
+//        }
+//
 
         if (savedInstanceState == null) {
             requireActivity().supportFragmentManager.commit {
@@ -38,18 +48,4 @@ class RegisterClientFragment : Fragment() {
     private fun getStringFromAssets(fileName: String): String {
         return requireContext().assets.open(fileName).bufferedReader().use { it.readText() }
     }
-
-//    private fun getStringFromAssets(fileName: String): String? {
-//        return try {
-//            val inputStream = requireContext().assets.open(fileName)
-//            val size = inputStream.available()
-//            val buffer = ByteArray(size)
-//            inputStream.read(buffer)
-//            inputStream.close()
-//            String(buffer)
-//        } catch (e: Exception) {
-//            Log.e("RegisterClientFragment", "Error reading JSON from assets", e)
-//            null
-//        }
-//    }
 }
